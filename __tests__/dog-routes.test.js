@@ -10,9 +10,9 @@ describe('Integrations tests', () => {
   //   request(app).get('/api/dogs').expect(200, done);
   // });
 
-  it('verify if endpoint "/api/dogs" is working', async (done) => {
-    const res = await request(app).get('/api/dogs');
-    console.log(res);
-    done();
-  });
+  // it('verify if endpoint "/api/dogs" is working', async (done) => {
+  //   const res = await request(app).get('/api/dogs');
+  //   console.log(res);
+  //   done();
+  // });
 });
