@@ -2,10 +2,12 @@ name: GitHub Pipeline
 on:
   push:
     branches:
+      - develop
       - main
   pull_request:
     branches:
       - main
+      - develop
 jobs:
   test:
     runs-on: ubuntu-latest
