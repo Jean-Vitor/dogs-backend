@@ -27,7 +27,7 @@ jobs:
           path: ~/.npm
           key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
       - run: yarn lint
-
+    needs: install
   test:
     runs-on: ubuntu-latest
     steps:
@@ -37,4 +37,5 @@ jobs:
           path: ~/.npm
           key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
       - run: yarn test
+    needs: install
 
